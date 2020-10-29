@@ -30,6 +30,6 @@ jobs:
         run: npm install -g surge
       
       - name: Run Surge
-        run: surge ./ fayyaz-bootcamp2020-app.surge.sh --token ${{secret.SURGE_TOKEN}}
+        run: surge ./ fayyaz-bootcamp2020-app.surge.sh --token ${{secrets.SURGE_TOKEN}}
         
        
