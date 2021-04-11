@@ -25,11 +25,11 @@ jobs:
       - name: Install NodeJS
         uses: actions/setup-node@v2-beta
         with:
-          node-version: 14
+          node-version: 12
       - name: Install Surge
         run: npm install -g surge
       
       - name: Run Surge
-        run: surge ./ fayyaz-bootcamp2020-app.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./ fayyaz-bootcamp2021.surge.sh --token ${{secrets.SURGE_TOKEN}}
         
        
